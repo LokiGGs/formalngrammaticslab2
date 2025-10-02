@@ -1,0 +1,100 @@
+:root {
+    --text-color: #99a3ba;
+    --border-color: #CDD9ED;
+    --button-color: #eef4ff;
+}
+
+html {
+    height: 100%;
+    background-color: #f5f9ff;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form {
+    height: 40px;
+}
+
+.main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    gap: 15px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+.enter-template,
+.enter-adress {
+    display: flex;
+    align-items: stretch;
+    border: 2px solid var(--border-color);
+    box-sizing: border-box;
+    transition: .5s ease-in-out;
+}
+
+.enter-template:focus-within,
+.enter-adress:focus-within {
+    --border-color: #405cf5;
+    --button-color: #405cf5;
+    --text-color: white;
+}
+
+.main input {
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+    font-size: 1;
+}
+
+.template-header,
+.adress-header {
+    font-size: 18px;
+    display: flex;
+}
+
+.template,
+.adress {
+    padding-left: 10px;
+}
+
+.main button {
+    border: none;
+    border-left: 2px var(--border-color);
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: .5s ease-in-out;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    color: gray;
+}
